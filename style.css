@@ -554,3 +554,12 @@ header {
     -webkit-transition: .3s all ease;
 
 }
+
+@media(max-width: 1024px) {
+    .services .services__grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+    }
+
+}
