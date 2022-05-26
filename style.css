@@ -556,6 +556,11 @@ header {
 }
 
 @media(max-width: 1024px) {
+    .container {
+        max-width: 600px;
+
+    }
+
     .services .services__grid {
         grid-template-columns: 1fr;
         gap: 50px;
