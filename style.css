@@ -17,6 +17,15 @@
 }
 
 @font-face {
+    font-family: 'Rea';
+    src: url('./fonts/reaver-black-webfont.woff2'), url('./fonts/reaver-black-webfont.woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 900;
+
+}
+
+@font-face {
     font-family: 'Rad';
     src: url('./fonts/radiance-regular-webfont.woff2'), url('./fonts/radiance-regular-webfont.woff');
     font-style: normal;
@@ -25,15 +34,28 @@
 
 }
 
+@font-face {
+    font-family: 'Rad';
+    src: url('./fonts/radiance-semibold-webfont.woff2'), url('./fonts/radiance-semibold-webfont.woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 600;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 
 }
 
 :root {
-    --bg-yellow: #E4C623;
+    --highlighted: rgb(255, 115, 0);
+    --bg-white: #fff;
+    --bg-yellow6: #E4C623;
+    --bg-yellow5: #E4C523;
     --bg-odd: #0D0D0D;
     --bg-even: #272727;
 
@@ -41,7 +63,7 @@
 
 body {
     font-family: 'Rad', sans-serif;
-    color: #fff;
+    color: var(--bg-white);
 
 }
 
@@ -65,7 +87,7 @@ header {
     align-items: center;
 
     height: 100px;
-    color: white;
+    color: var(--bg-white);
 
 }
 
@@ -114,7 +136,7 @@ header {
 
 .toCenter li a {
     text-decoration: none;
-    color: white;
+    color: var(--bg-white);
 
 }
 
@@ -174,6 +196,16 @@ header {
 
 }
 
+.preview__contact .left:hover {
+    cursor: pointer;
+
+}
+
+.preview__contact .right:hover {
+    cursor: pointer;
+
+}
+
 .preview__contact .left {
     display: flex;
     align-items: center;
@@ -202,7 +234,7 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: var(--bg-yellow);
+    background: var(--bg-yellow6);
     border-radius: 0px 10px 0px 0px;
     width: 79px;
     height: 79px;
@@ -210,6 +242,12 @@ header {
 }
 
 .advantages {
+    padding-top: 55px;
+	margin-top: -55px;
+
+	background-clip: content-box;
+	-webkit-background-clip: content-box;
+
     background-color: var(--bg-odd);
 
 }
@@ -296,8 +334,22 @@ header {
 
 }
 
+.tpToServices {
+    padding-top: 45px;
+	margin-top: -45px;
+    
+}
+
 .services {
     background-color: var(--bg-even);
+    padding-bottom: 86px;
+
+}
+
+.services .services__grid {
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
 }
 
@@ -307,11 +359,198 @@ header {
 
 }
 
-.services .services__title h1 {
+.services .services__title h1 {    
     font-family: 'Rea';
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 92px;
+
+}
+
+.services .card__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 442px;
+    height: 88px;
+    background: var(--bg-odd);
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.services .card__title h2 {
+    text-transform: uppercase;
+
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: var(--bg-white);
+}
+
+
+.services .card__img {
+    width: 442px;
+    height: 250px;
+
+}
+
+.services .card__RWA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-yellow5);
+    border-top: 1px solid var(--bg-white);
+
+    width: 442px;
+    height: 54px;
+
+}
+
+.services .card__RWA h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000;
+
+}
+
+.services .card__priceRWA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EEE;
+    border-top: 1px solid var(--bg-white);
+    
+    width: 442px;
+    height: 85px;
+
+}
+
+.services .card__priceRWA h2 {
+    color: #000;
+
+    font-family: 'Rea';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+
+}
+
+.services .card__priceRWA h3 {
+    margin-top: 10px;
+    margin-left: 5px;
+
+    color: black;
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.services .card__materials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-yellow5);
+    border-top: 1px solid var(--bg-white);
+
+    width: 442px;
+    height: 54px;
+
+}
+
+.services .card__materials h2 {
+    color: black;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.services .card__priceMaterials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EEE;
+    border-top: 1px solid var(--bg-white);
+    
+    width: 442px;
+    height: 85px;
+
+}
+
+.services .card__priceMaterials h2 {
+    color: #000;
+    
+    font-family: 'Rea';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 69px;
+
+}
+
+
+.services .card__priceMaterials h3 {
+    margin-top: 10px;
+    margin-left: 5px;
+
+    color: black;
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+
+.services .card__order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-yellow5);
+    border-top: 1px solid var(--bg-white);
+    border-radius: 0px 0px 20px 20px;
+
+    width: 442px;
+    height: 60px;
+
+}
+
+.services .card__order h2 {
+    color: black;
+    text-transform: uppercase;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.services .card__order:hover {
+    cursor: pointer;
+    background-color: var(--highlighted);
+
+    transition: .3s all ease;
+    -webkit-transition: .3s all ease;
 
 }
