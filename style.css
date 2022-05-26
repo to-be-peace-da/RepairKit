@@ -562,4 +562,14 @@ header {
 
     }
 
+    .toCenter {
+        display: none;
+
+    }
+
+    .toRight {
+        display: none;
+        
+    }
+
 }
