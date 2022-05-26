@@ -103,7 +103,9 @@ header {
 
 }
 
-.brand p {
+.brand a {
+    color: var(--bg-white);
+    text-decoration: none;
     font-family: 'Rea';
     font-style: normal;
     font-weight: 400;
@@ -555,26 +557,179 @@ header {
 
 }
 
-@media(max-width: 1024px) {
-    .container {
-        max-width: 600px;
+.contactUs {
+    padding-top: 86px;
+    padding-bottom: 86px;
+    background-color: var(--bg-odd);
 
-    }
+}
 
-    .services .services__grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
+.contactUs .contactUs__area {
+    background: url('./img/contactUs__img.jpg') center / cover;
+    border-radius: 20px 0px;
 
-    }
+}
 
-    .toCenter {
-        display: none;
+.contactUs .contactUs__area .contactUs__block {
+    padding: 40px;
 
-    }
+}
 
-    .toRight {
-        display: none;
-        
-    }
+.contactUs .contactUs__title {
+    margin-bottom: 33px;
+
+}
+
+.contactUs .contactUs__title h2 {
+    font-family: 'Rea';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 92px;
+
+}
+
+.contactUs .contactUs__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.contactUs .contactUs__fill {
+    margin-top: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+}
+
+.contactUs .contactUs__fill .fill__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--bg-white);
+    border-radius: 10px;
+
+    width: 290px;
+    height: 70px;
+
+}
+
+.contactUs .contactUs__fill .fill__number input {
+    text-align: center;
+    color: #272727;
+
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+
+    outline: none;
+    border: none;
+
+}
+
+.contactUs .contactUs__fill .fill__name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-white);
+    border-radius: 10px;
+
+    width: 290px;
+    height: 70px;
+
+}
+
+.contactUs .contactUs__fill .fill__name input {
+    text-align: center;
+    color: #272727;
+
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+
+    outline: none;
+    border: none;
+
+}
+
+
+.contactUs .contactUs__fill .fill__request {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--bg-yellow5);
+    border-radius: 10px;
+
+    width: 290px;
+    height: 70px;
+
+}
+
+.contactUs .contactUs__fill .fill__request button {
+    outline: none;
+    border: none;
+    background: none;
+
+}
+
+.contactUs .contactUs__fill .fill__request button p {
+    font-family: 'Rad';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.contactUs .contactUs__fill .fill__request p:hover {
+    cursor: pointer;
+
+}
+
+
+.contactUs .contactUs__fill .fill__request:hover {
+    cursor: pointer;
+    background-color: var(--highlighted);
+
+    transition: .3s all ease;
+    -webkit-transition: .3s all ease;
+
+}
+
+.howWeWork {
+    background-color: var(--bg-even);
+
+}
+
+.howWeWork__title {
+    padding-top: 56px;
+
+}
+
+.howWeWork__title h1 {
+    font-family: 'Rea';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 92px;
+
+}
+
+.homWeWork__grid {
+    padding-top: 90px;
+    padding-bottom: 90px;
 
 }
