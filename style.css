@@ -341,9 +341,6 @@ header {
 }
 
 .services {
-    padding-top: 45px;
-	margin-top: -45px;
-
     background-color: var(--bg-even);
     padding-bottom: 86px;
 
