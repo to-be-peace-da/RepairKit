@@ -623,7 +623,7 @@ header {
 
 .contactUs .contactUs__fill .fill__number input {
     text-align: center;
-    color: #272727;
+    color: var(--bg-even);
 
     font-family: 'Rad';
     font-style: normal;
@@ -651,7 +651,7 @@ header {
 
 .contactUs .contactUs__fill .fill__name input {
     text-align: center;
-    color: #272727;
+    color: var(--bg-even);
 
     font-family: 'Rad';
     font-style: normal;
@@ -728,8 +728,180 @@ header {
 
 }
 
-.homWeWork__grid {
+.howWeWork__grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto;
+
     padding-top: 90px;
     padding-bottom: 90px;
+
+}
+
+.howWeWork__grid .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.howWeWork__grid .card__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #E4C523;
+    border-radius: 10px;
+
+    width: 175px;
+    height: 175px;
+
+}
+
+.howWeWork__grid .card__text {
+    margin-top: 22px;
+
+}
+
+.howWeWork__grid .card__text p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+}
+
+.howWeWork__grid .arrow {
+    margin-top: 75px;
+
+}
+
+.contacts {
+    padding-top: 56px;
+    padding-bottom: 78px;
+    background-color: var(--bg-odd);
+
+}
+
+.contacts .contacts__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contacts__block__left__title h1 {
+    font-family: 'Rea';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 92px;
+
+}
+
+.contacts__block__left__text {
+    margin-top: 25px;
+    max-width: 400px;
+
+}
+
+.contacts__block__left__text p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+
+.contacts .phone {
+    margin-top: 43px;
+    display: flex;
+
+}
+
+.contacts .phone .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 277px;
+    height: 68px;
+
+    background: var(--bg-even);
+    border-radius: 10px 0px 0px 10px;
+
+}
+.contacts .phone .left p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+.contacts .phone .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 68px;
+    height: 68px;
+    
+    background: var(--bg-yellow6);
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.contacts .mail {
+    margin-top: 25px;
+    display: flex;
+
+}
+
+.contacts .mail .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 328px;
+    height: 68px;
+
+    background: var(--bg-even);
+    border-radius: 10px 0px 0px 10px;
+
+}
+.contacts .mail .left p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    
+}
+
+.contacts .mail .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 68px;
+    height: 68px;
+    
+    background: var(--bg-yellow6);
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.contacts .copyright {
+    margin-top: 19px;
+
+}
+
+.contacts .copyright p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
 
 }
