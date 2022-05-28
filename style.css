@@ -624,6 +624,8 @@ header {
 }
 
 .contactUs .contactUs__fill .fill__number input {
+    background: transparent;
+
     text-align: center;
     color: var(--bg-even);
 
@@ -652,6 +654,8 @@ header {
 }
 
 .contactUs .contactUs__fill .fill__name input {
+    background: transparent;
+
     text-align: center;
     color: var(--bg-even);
 
@@ -1061,5 +1065,130 @@ header {
 		padding: 0 15px;
 
 	}
+
+    .preview .preview__title {
+        padding-top: 75px;
+
+    }
+
+    .preview .preview__title h1 {
+        font-size: 48px;
+        line-height: 1.2;
+
+    }
+
+    .preview .preview__contact .left {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .preview .preview__contact .left p {
+        margin-left: 0;
+
+    }
+
+    .advantages .advantages__title h1 {
+        font-size: 48px;
+        line-height: 1.2;
+
+    }
+
+    .advantages .advantages__cards .card__title {
+        max-width: 180px;
+
+    }
+
+    .advantages .advantages__cards .card__title h1 {
+        font-size: 24px;
+
+    }
+
+    .advantages .advantages__cards .card__text {
+        max-width: 180px;
+
+    }
+
+    .advantages .advantages__cards .card__text p {
+        font-size: 18px;
+
+    }
+
+    .services .services__title h1 {
+        font-size: 48px;
+
+    }
+
+    .services__grid .card__title h2 {
+        font-size: 28px;
+
+    }
+
+    .services__grid .card__RWA h2, .services__grid .card__materials h2 {
+        font-size: 22px;
+
+    }
+
+    .services__grid .card__priceMaterials h2, .services__grid .card__priceRWA h2 {
+        font-size: 38px;
+        
+    }
+
+    .contactUs .contactUs__title h2 {
+        font-size: 40px;
+
+    }
+
+    .contactUs .contactUs__text p {
+        font-size: 28px;
+        line-height: 1;
+
+    }
+
+    .contactUs .contactUs__fill .fill__number, .contactUs .contactUs__fill .fill__name {
+        width: auto;
+
+    }
+
+    .contactUs .contactUs__fill .fill__request {
+        width: 276px;
+
+    }
+
+    .contacts .contacts__block {
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .contacts .contacts__block__left__title h1 {
+        font-size: 48px;
+
+    }
+
+    .contacts .contacts__block__left__text p {
+        font-size: 32px;
+
+    }
+
+    .contacts .contacts__block__left .phone {
+        max-width: 280px;
+
+    }
+
+    .contacts .contacts__block__left .phone p {
+        font-size: 22px;
+
+    }
+
+    .contacts .contacts__block__left .mail {
+        max-width: 280px;
+
+    }
+
+    .contacts .contacts__block__left .mail p {
+        font-size: 22px;
+
+    }
 
 }
