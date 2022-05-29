@@ -1,21 +1,18 @@
-window.onload = function () {
-    const menuBtn = document.querySelector('.hamburger');
-    const mobileMenu = document.querySelector('.mobile-nav');
+const menuBtn = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobile-nav');
 
-    menuBtn.addEventListener('click', function () {
-        menuBtn.classList.toggle('is-active');
-        mobileMenu.classList.toggle('is-active');
+menuBtn.addEventListener('click', function () {
+    menuBtn.classList.toggle('is-active');
+    mobileMenu.classList.toggle('is-active');
 
-    })
+})
 
-    mobileMenu.addEventListener('click', function () {
-        menuBtn.classList.toggle('is-active');
-        mobileMenu.classList.toggle('is-active');
-
-    })
-
-}
-
+mobileMenu.addEventListener('click', function () {
+    menuBtn.classList.toggle('is-active');
+    mobileMenu.classList.toggle('is-active');
+    
+})
+    
 document.addEventListener("DOMContentLoaded", function () {
     let phoneInputs = document.querySelectorAll('input[data-tel-input]');
 
