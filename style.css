@@ -879,6 +879,12 @@ header {
 
 }
 
+.tpToContacts {
+    padding-top: 40px;
+	margin-top: -40px;
+    
+}
+
 .contacts {
     padding-top: 56px;
     padding-bottom: 78px;
