@@ -385,6 +385,7 @@ header {
 }
 
 .advantages .card__adv {
+    position: relative;
     margin-top: 5px;
 
     display: flex;
@@ -398,6 +399,25 @@ header {
 .advantages .card__adv img {
     margin-right: 30px;
 
+}
+
+.advantages .card__adv .cont p {
+    font-weight: bold;
+    color: black;
+    font-size: 32px;
+
+    position: absolute;
+    top: 0;
+    top: 11px;
+    left: 0;
+    left: 26px;
+
+}
+
+.advantages .card__adv .cont .cont__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .advantages .card__title h1 {
