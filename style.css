@@ -307,27 +307,32 @@ header {
 .preview__contact .left {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: space-evenly;
 
-    background: var(--bg-odd);
-    border-radius: 0px 0px 0px 10px;
-    height: 79px;
-    width: 501px;
+    background: var(--bg-yellow6);
+    border-radius: 0px 10px 0px 10px;
+    height: 65px;
+    width: 330px;
 
 }
 
 .preview__contact .left p {
-    margin-left: 38px;
     font-family: 'Rad';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #817676;
+    color: black;
 
 }
 
-.preview__contact .right {
+.preview__contact .left img {
+    height: 45px;
+
+}
+
+
+/* .preview__contact .right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,7 +342,8 @@ header {
     width: 79px;
     height: 79px;
 
-}
+} */
+
 
 .advantages {
     padding-top: 55px;
@@ -367,7 +373,7 @@ header {
     font-weight: 600;
     font-size: 64px;
     line-height: 92px;
-    text-align: right;
+    text-align: left;
 
 }
 
@@ -420,6 +426,8 @@ header {
 }
 
 .advantages .card__text p {    
+    text-align: justify;
+
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -588,9 +596,12 @@ header {
 
     background: #EEE;
     border-top: 1px solid var(--bg-white);
+    border-radius: 0px 0px 20px 20px;
     
     width: 442px;
     height: 85px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 
 }
 
@@ -625,9 +636,9 @@ header {
     align-items: center;
     justify-content: center;
 
-    background: var(--bg-yellow5);
-    border-top: 1px solid var(--bg-white);
-    border-radius: 0px 0px 20px 20px;
+    background: var(--bg-odd);
+    /* border-top: 1px solid var(--bg-white); */
+    border-radius: 20px;
 
     width: 442px;
     height: 60px;
@@ -635,7 +646,7 @@ header {
 }
 
 .services .card__order h2 {
-    color: black;
+    color: white;
     text-transform: uppercase;
 
     font-style: normal;
@@ -651,6 +662,15 @@ header {
 
     transition: .3s all ease;
     -webkit-transition: .3s all ease;
+
+}
+
+.services .card__order h2:hover {
+    color: black;
+    background-color: var(--highlighted);
+
+    transition: .8s all ease;
+    -webkit-transition: .8s all ease;
 
 }
 
@@ -936,10 +956,8 @@ header {
     width: 277px;
     height: 68px;
 
-    background: var(--bg-even);
-    border-radius: 10px 0px 0px 10px;
-
 }
+
 .contacts .phone .left p{
     font-style: normal;
     font-weight: 400;
@@ -957,7 +975,7 @@ header {
     height: 68px;
     
     background: var(--bg-yellow6);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
 
 }
 
@@ -975,10 +993,8 @@ header {
     width: 328px;
     height: 68px;
 
-    background: var(--bg-even);
-    border-radius: 10px 0px 0px 10px;
-
 }
+
 .contacts .mail .left p{
     font-style: normal;
     font-weight: 400;
@@ -996,7 +1012,7 @@ header {
     height: 68px;
     
     background: var(--bg-yellow6);
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px;
 
 }
 
@@ -1197,7 +1213,7 @@ header {
     }
 
     .advantages .advantages__cards .card__title {
-        max-width: 180px;
+        margin-right: 10px;
 
     }
 
@@ -1207,11 +1223,12 @@ header {
     }
 
     .advantages .advantages__cards .card__text {
-        max-width: 180px;
+        margin-right: 10px;
 
     }
 
     .advantages .advantages__cards .card__text p {
+        text-align: left;
         font-size: 18px;
 
     }
