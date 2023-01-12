@@ -107,7 +107,7 @@ header {
 .brand a {
     color: var(--bg-white);
     text-decoration: none;
-    font-family: 'Rea';
+    font-family: 'Rea', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
